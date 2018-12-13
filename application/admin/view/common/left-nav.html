@@ -1,0 +1,114 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                    <img src="__PURPLEADMIN__/images/faces/face1.jpg" alt="profile">
+                    <span class="login-status online"></span> <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                    <span class="font-weight-bold mb-2">王海鹏</span>
+                    <span class="text-secondary text-small">管理员</span>
+                </div>
+                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">
+                <span class="menu-title">仪表盘</span>
+                <i class="mdi mdi-home menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#qishou" aria-expanded="false" aria-controls="qishou">
+                <span class="menu-title">骑手管理</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-motorbike menu-icon"></i>
+            </a>
+            <div class="collapse" id="qishou">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{:url('rider/index')}">骑手列表</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('rider/payment')}">支付设置</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('rider/set')}">骑手设置</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('rider/coupon')}">优惠券</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">物业用户</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-domain menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{:url('property/index')}">物业列表</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('property/postal')}">提现管理</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('property/set')}">物业设置</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#geren" aria-expanded="false" aria-controls="geren">
+                <span class="menu-title">个人用户</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+            </a>
+            <div class="collapse" id="geren">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{:url('user/index')}">会员列表</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('user/postal')}">提现管理</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('user/set')}">会员设置</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('user/deposit')}">押金管理</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#caiwu" aria-expanded="false" aria-controls="caiwu">
+                <span class="menu-title">财务统计</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+            <div class="collapse" id="caiwu">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{:url('finance/index')}"> 财务统计</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('finance/postal')}"> 提现统计</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('finance/deposit')}"> 押金统计</a></li>
+                </ul>
+            </div>
+        </li><li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#shuju" aria-expanded="false" aria-controls="shuju">
+            <span class="menu-title">数据信息</span>
+            <i class="menu-arrow"></i>
+            <i class="mdi mdi-database menu-icon"></i>
+        </a>
+        <div class="collapse" id="shuju">
+            <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:url('information/property')}">物业数据</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:url('information/rider')}">骑手数据</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:url('information/user')}">会员数据</a></li>
+            </ul>
+        </div>
+    </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#styem" aria-expanded="false" aria-controls="styem">
+                <span class="menu-title">系统设置</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-settings menu-icon"></i>
+            </a>
+            <div class="collapse" id="styem">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{:url('system/set')}">系统设置</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('system/authority')}">权限管理</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('system/timing')}">定时任务</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('system/sms')}">短信设置</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{:url('system/msgsend')}">消息发送</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item sidebar-actions">
+
+        </li>
+    </ul>
+</nav>
