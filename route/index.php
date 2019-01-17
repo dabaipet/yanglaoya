@@ -7,11 +7,10 @@
  */
 use think\facade\Route;
 
-Route::bind('api');
-Route::domain('api', function () {
+Route::bind('index');
+Route::domain('www', function () {
     //首页
     Route::rule('/', 'index');
-    Route::rule('location', 'index/location','GET|POST');
     //注册登录
     Route::rule('signin', 'signin/index','GET|POST');
     Route::rule('signin-choice', 'signin/choice','GET|POST');

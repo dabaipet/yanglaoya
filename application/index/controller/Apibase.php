@@ -3,7 +3,7 @@
  * API全局基类
  * */
 
-namespace app\api\controller;
+namespace app\index\controller;
 
 
 use think\App;
@@ -26,7 +26,7 @@ class Apibase extends Controller
         $this->uid = $this->request->param('uid');
         $this->userSession = json_decode(Session::get('user' . $this->uid));
         $this->identity = empty(Session::get('identity' . $this->uid)) ? 0 : Session::get('identity' . $this->uid);
-        self::isLogin();
+       // self::isLogin();
     }
 
     //Check does't login

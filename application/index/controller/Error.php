@@ -3,7 +3,7 @@
  * 错误控制器
  * */
 
-namespace app\api\controller;
+namespace app\index\controller;
 
 class Error extends Apibase
 {
