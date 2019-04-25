@@ -58,3 +58,22 @@ function showReturnCode($code = '', $msg = '') {
         return  "未定义消息";
     }
 }
+/*
+ * post CURL发送
+ * */
+function sendCurl($url = null){
+
+}
+/*
+ * 根据IP定位城市
+ *
+ * */
+function showIpCity($ip = null){
+    $city = null;
+    $url = 'http://ip.aliyun.com/service/getIpInfo.php?ip=' . $ip;
+
+    $ipCity = sendCurl($url);
+    return json_decode($ipCity ,true);
+}
+
+
